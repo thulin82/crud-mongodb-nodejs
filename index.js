@@ -11,16 +11,21 @@ dotenv.config();
 const app = express();
 
 //Middleware
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+app.use(
+    bodyParser.urlencoded({
+        extended: true
+    })
+);
 app.use(bodyParser.json());
-app.set('views',path.join(__dirname,'/views/'))
-app.engine('hbs',expressHandlebars({
-    extname:'hbs',
-    defaultLayout:'mainLayout',
-    layoutsDir: __dirname + '/views/layouts/'
-}))
+app.set('views', path.join(__dirname, '/views/'));
+app.engine(
+    'hbs',
+    expressHandlebars({
+        extname: 'hbs',
+        defaultLayout: 'mainLayout',
+        layoutsDir: __dirname + '/views/layouts/'
+    })
+);
 app.use(cors());
 
 const port = process.env.PORT;

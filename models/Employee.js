@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-var validator = require("email-validator");
+var validator = require('email-validator');
 
 const employeeSchema = new mongoose.Schema({
-    fullName: { type: String, required: 'This field is required'},
+    fullName: { type: String, required: 'This field is required' },
     email: String,
     mobile: String,
     city: String
