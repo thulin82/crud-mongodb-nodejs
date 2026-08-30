@@ -20,7 +20,7 @@
     "email-validator": "^2.0.0",
     "express": "^5.2.0",
     "express-handlebars": "^8.0.0",
-    "mongoose": "^9.2.0"
+    "mongoose": "^9.7.2"
   },
   "devDependencies": {
     "eslint": "^10.0.0",
